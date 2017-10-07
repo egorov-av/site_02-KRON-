@@ -1,1 +1,3 @@
-# template_bootstrap-less
+# site KRON
+
+page Customers (Клиенты)
