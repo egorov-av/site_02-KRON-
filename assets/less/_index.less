@@ -78,7 +78,7 @@
 			margin-top: 0;
 			margin-bottom: -2px;
 			& span {
-				text-shadow: 1px 1px 0 @white_font_color, -1px -1px 0 @white_font_color;
+				text-shadow: 0 0 3px @white_font_color;
 			}
 		}
 		& p {
@@ -116,6 +116,98 @@
 	}
 	&_food h2 span {
 		color: @color_green;
+	}
+}
+
+.auto {
+	&_content {
+		position: relative;
+		& .text {
+			text-align: justify;
+			font-weight: 400;
+			margin-bottom: 3.06%; /* 20px / 653px */
+			&.text-1 {
+				padding: 2.3%; /* 15px / 653px */
+				font-size: 15px;
+			}
+			&.lead {
+				font-size: 29px;
+				margin-top: 3.06%; /* 20px / 653px */
+			}
+			&.text-2 {
+				font-size: 17px;
+				padding: 2.3%; /* 15px / 653px */
+			}
+			&.text-3 {
+				font-size: 17px;
+				padding: 2.3% 0; /* 15px / 653px */
+			}
+		}
+		&_icon {
+			float: right;
+			margin-top: 30%;
+		}
+		& .h5 {
+			margin: 0;
+		}
+	}
+	&_title {
+		display: inline-block;
+		font-size: 19px;
+		float: right;
+		margin: -6px 0 0;
+		padding: 5px 15px;
+	}
+	&_img {
+		margin-bottom: 7.66%; /* 50px / 653px */
+	}
+	&_townSelect {
+		width: 290px;
+		padding: 4.59% 6.89%; /* 30px & 45px / 653px */
+		margin-bottom: 10.72%; /* 70px / 653px */
+		& p {
+			font-size: 12px;
+			font-weight: 700;
+			border-bottom: 2px solid @color_dark_blue;
+		}
+		& .form-control {
+			border-color: @color_grey;
+		}
+		& .form-control:focus {
+			border-color: @color_grey;
+			box-shadow: none;
+		}
+		& .input-sm {
+			border-radius: 0;
+		}
+	}
+	&_line {
+		& > div {
+			display: inline-block;
+		}
+		& h3 {
+			font-size: 39px;
+			font-weight: 900;
+			padding: 10px 15px;
+			border-radius: 10px 0 0 0;
+			margin: 0 0 0 20px;
+			& span {
+				color: @color_blue;
+				text-shadow: 0 0 3px @white_font_color;
+			}
+		}
+		&_btn {
+			position: relative;
+			& * {
+				font-family: @font_segoe;
+				font-size: 19px;
+				font-weight: 900;
+			}
+		}
+		&_img {
+			position: relative;
+			margin-left: 30px;
+		}
 	}
 }
 
