@@ -1,18 +1,20 @@
 .team {
-	padding-top: 70px;
-	padding-bottom: 70px;
-	margin-bottom: 30px;
+	margin-bottom: 2.11%; /* 30px / 1423px */
+	&_box {
+		padding-top: 5.24%; /* 70px /1336px */
+		padding-bottom: 5.24%;
+	}
 	&_text {
 		color: @white_font_color;
 		font-size: 22px;
 		background-color: rgba(0, 0, 0, 0.5);
 		& p {
-			padding: 30px 30px 0;
+			padding: 3.41% 3.41% 0; /* 30px / 880px */
 			margin-bottom: 0;
 			font-weight: 700;
 		}
 		& h3 {
-			padding-right: 30px;
+			padding-right: 3.41%; /* 30px / 880px */
 			margin-top: 0;
 			font-family: @font_segoe;
 			font-weight: 900;
@@ -21,10 +23,10 @@
 }
 
 .start {
-	margin-bottom: 60px;
+	margin-bottom: 4.22%; /* 60px / 1423px */
 	&_text p {
 		font-size: 39px;
-		padding: 0 65px;
+		padding: 0 6.54%; /* 65px / 994px */
 		font-weight: 700;
 		& span {
 			font-family: @font_segoe;
@@ -57,6 +59,63 @@
 				font-weight: 900;
 			}
 		}
+	}
+}
+
+.service {
+	margin-bottom: 3.51%; /* 50px / 1423px */
+	&_ship,
+	&_food,
+	&_auto {
+		position: relative;
+		& * {
+			position: relative;
+		}
+		& h2 {
+			font-size: 58px;
+			font-weight: 900;
+			color: @white_font_color;
+			margin-top: 0;
+			margin-bottom: -2px;
+			& span {
+				text-shadow: 1px 1px 0 @white_font_color, -1px -1px 0 @white_font_color;
+			}
+		}
+		& p {
+			margin: 0 auto;
+			font-weight: 700;
+			&.heading {
+				background: @base_font_color;
+				color: @white_font_color;
+				border-radius: 10px;
+				font-size: 15px;
+			}
+			&.body {
+				padding: 1.07% 2.6%; /* 7px & 17px / 653px */
+				background: rgba(255, 255, 255, .6);
+				font-size: 11px;
+			}
+		}
+	}
+	&_auto::before,
+	&_ship::before,
+	&_food::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: rgba(0, 79, 88, .3);
+	}
+	&_auto h2 span {
+		color: @color_blue;
+	}
+	&_ship h2 span {
+		color: @base_font_color;
+	}
+	&_food h2 span {
+		color: @color_green;
 	}
 }
 

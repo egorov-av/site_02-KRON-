@@ -4,29 +4,104 @@
 	.start_btn {
 		margin: auto;
 	}
+
+	.service_auto,
+	.service_ship,
+	.service_food {
+		margin-bottom: 2.2%; /* 30px / 1366px */
+		padding-bottom: 0.73%; /* 10px / 1366px */
+		& p {
+			&.heading {
+				width: 82.87%;
+				padding: 0 5px;
+			}
+			&.body {
+				width: 79.18%;
+			}
+		}
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
-
+	.service_auto,
+	.service_ship,
+	.service_food {
+		& p {
+			&.heading {
+				width: 51.87%; /* 347px / 669px */
+			}
+			&.body {
+				width: 49.18%; /* 329px / 669px */
+			}
+		}
+	}
 }
 
 /* Small Devices, Tablets -sm- */
 @media only screen and (min-width: 768px) {
 	.start_btn {
-		left: -70px;
+		left: -22.51%; /* 70px / 311px */
+	}
+
+	.service_auto,
+	.service_ship,
+	.service_food {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
 /* Medium Devices, Desktops -md- */
 @media only screen and (min-width: 992px) {
 	.start_btn {
-		top: -95px;
-		left: -60px;
+		margin-top: -31.19%; /* 97px / 311px */
+		left: -19.29%; /* 60px / 311px */
+	}
+
+	.service_auto,
+	.service_ship,
+	.service_food {
+		width: 60%;
 	}
 }
 
 /* Large Devices, Wide Screens -lg- */
 @media only screen and (min-width: 1200px) {
+	.service p.body {
+		margin-bottom: 0;
+	}
 
+	.service_auto,
+	.service_ship,
+	.service_food {
+		width: auto;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.service_auto {
+		clip-path: polygon(50% 99%, 1% 0, 99% 0);
+		padding-bottom: 32.16%; /* 210px / 653px */
+		bottom: -395px;
+		margin-top: -395px;
+	}
+
+	.service_ship,
+	.service_food {
+		clip-path: polygon(50% 1%, 1% 100%, 99% 100%);
+		padding-top: 32.16%; /* 210px / 653px */
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
+	.service_ship h2 {
+		padding-left: 8.73%; /* 57px / 653px */
+	}
+
+	.service_food h2 {
+		padding-right: 8.73%; /* 57px / 653px */
+	}
 }

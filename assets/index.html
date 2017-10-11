@@ -9,56 +9,142 @@
 	<!-- Bootstrap min CSS -->
 	<link rel="stylesheet" href="libs/bootstrap%203.3.7/css/bootstrap.min.css">
 
-	<!-- Bootstrap-skin.css -->
-	<!-- <link rel="stylesheet" href="css/bootstrap_skin.css"> -->
-
-	<!-- Custom styles -->
+	<!-- CSS -->
 	<link rel="stylesheet" href="css/main.css">
 	<title>Клиенты</title>
 </head>
 <body style="background: url(img/base_background.jpg);">
-<div class="wrapper container-fluid">
 
-	<div class="team" style="background: url(img/customers/kronTeamFon.jpg) center;">
-		<div class="team_text">
-			<div class="row">
-				<div class="col-sm-8 col-sm-offset-2">
-					<p class="lead text-justify">
-						Текст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст
-						Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст
-					</p>
-					<h3 class="text-right">
-						KRON team
-					</h3>
-				</div>
+<div class="team">
+	<div class="container-fluid">
+		<div class="team_box" style="background: url(img/customers/kronTeamFon.jpg) center;">
+			<div class="team_text">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<p class="lead text-justify">
+							Текст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст
+							ТекстТекст
+							Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст
+						</p>
+						<h3 class="text-right">
+							KRON team
+						</h3>
+					</div>
+				</div><!-- .row -->
 			</div>
 		</div>
-	</div><!-- .team -->
+	</div>
+</div><!-- .team -->
 
-	<div class="start row">
-		<div class="start_text col-sm-9">
-			<p>
-				<span class="text-uppercase">kron</span> - текст текст текст текст текст текст текст текст текст текст текст
-			</p>
-		</div>
-		<div class="col-sm-3">
-			<div class="start_btn">
-				<div class="text-center">
-					<p class="text-uppercase">
-						НАЧАТЬ ПОЛЬЗОВАТЬСЯ СЕРВИСОМ
-						<span>kron</span>
-					</p>
-					<button class="btn btn-default btn-xs text-uppercase" id="start">
-						ХОЧУ НАЧАТЬ
-					</button>
+<div class="start">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="start_text col-sm-9">
+				<p>
+					<span class="text-uppercase">kron</span> - текст текст текст текст текст текст текст текст текст текст текст
+				</p>
+			</div>
+			<div class="col-sm-3">
+				<div class="start_btn">
+					<div class="text-center">
+						<p class="text-uppercase">
+							НАЧАТЬ ПОЛЬЗОВАТЬСЯ СЕРВИСОМ
+							<span>kron</span>
+						</p>
+						<button class="btn btn-defo btn-xs text-uppercase" data-toggle="modal" data-target="#registration">
+							ХОЧУ НАЧАТЬ
+						</button>
+					</div>
 				</div>
 			</div>
+		</div><!-- .row -->
+	</div>
+</div><!-- .start -->
+
+<div class="service">
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-lg-6 col-lg-offset-3">
+				<div class="service_auto column text-uppercase" style="background:url(img/customers/start/kronAuto.jpg) left;">
+					<h2 class="text-center">KRON <span>AUTO</span></h2>
+					<p class="heading text-center">
+						ТЕКСТ текст ТЕКСТ ТЕКСТ ТЕКСТ
+					</p>
+					<p class="body text-justify">
+						ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ
+						ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ
+						ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ
+					</p>
+				</div><!-- .service_auto -->
+			</div>
+
+			<div class="col-lg-6">
+				<div class="service_ship column text-uppercase"
+						 style="background:url(img/customers/start/kronShip.jpg) center; background-size: cover;">
+					<h2 class="text-center hidden-lg">KRON <span>ship</span></h2>
+					<p class="heading text-center hidden-lg">
+						ТЕКСТ текст ТЕКСТ ТЕКСТ ТЕКСТ
+					</p>
+
+					<p class="body text-justify">
+						ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ
+						ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ
+					</p>
+
+					<p class="heading text-center visible-lg">
+						ТЕКСТ текст ТЕКСТ ТЕКСТ ТЕКСТ
+					</p>
+					<h2 class="text-left visible-lg">KRON <span>ship</span></h2>
+				</div><!-- .service_ship -->
+			</div>
+
+			<div class="col-lg-6">
+				<div class="service_food column text-uppercase"
+						 style="background:url(img/customers/start/kronFood.jpg) center; background-size: cover;">
+
+					<h2 class="text-center hidden-lg">KRON <span>food</span></h2>
+					<p class="heading text-center hidden-lg">
+						ТЕКСТ текст ТЕКСТ ТЕКСТ ТЕКСТ
+					</p>
+
+					<p class="body text-justify">
+						ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ
+					</p>
+
+					<p class="heading text-center visible-lg">
+						ТЕКСТ текст ТЕКСТ ТЕКСТ ТЕКСТ
+					</p>
+					<h2 class="text-right visible-lg">KRON <span>food</span></h2>
+				</div><!-- .service_food -->
+			</div>
+
+		</div><!-- .row -->
+	</div>
+</div><!-- .service -->
+
+
+
+<!----- Modal blocks ----->
+<!-- registering -->
+<div class="modal fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+					aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Регистрация</h4>
+			</div>
+			<div class="modal-body">
+				...
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-defo" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
 		</div>
-	</div><!-- .start -->
-
-
-
-</div><!-- .wrapper -->
+	</div>
+</div>
 <!-- jQuery first, then Bootstrap JS -->
 <script src="libs/jquery%203.2.1/jquery-3.2.1.min.js"></script>
 <script src="libs/bootstrap%203.3.7/js/bootstrap.min.js"></script>

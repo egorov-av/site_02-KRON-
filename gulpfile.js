@@ -4,7 +4,6 @@ var gulp = require('gulp'),
 	postcss = require('gulp-postcss'),
 	sourcemaps = require('gulp-sourcemaps'),
 	notify = require('gulp-notify'),
-	concat = require('gulp-concat'),
 	uglify = require('gulp-uglifyjs'),
 	imagemin = require('gulp-imagemin'),
 	del = require('del'),
@@ -12,31 +11,21 @@ var gulp = require('gulp'),
 	browserSync = require('browser-sync');
 
 // Less
-gulp.task('less', function(){
+gulp.task('less', function () {
 	return gulp.src('assets/less/main.less')
 		.pipe(sourcemaps.init())
 		.pipe(less())
-		.on("error", notify.onError(function(error) {
-            return "Message to the notifier: " + error.message;
-        }))
+		.on("error", notify.onError(function (error) {
+			return "Message to the notifier: " + error.message;
+		}))
 		.pipe(postcss([autoprefixer('last 3 version')]))
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('assets/css/'))
 		.pipe(browserSync.reload({stream: true}))
 });
 
-// JS
-gulp.task('scripts', function(){
-	return gulp.src([
-			'assets/js/your_js.js'
-		])
-		.pipe(concat('main.js'))
-		.pipe(gulp.dest('assets/js'))
-    .pipe(browserSync.reload({stream: true}))
-});
-
 // Browser-sync
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', function () {
 	browserSync({
 		server: {
 			baseDir: 'assets'
@@ -47,19 +36,19 @@ gulp.task('browser-sync', function() {
 });
 
 // Watcher
-gulp.task('watch', ['browser-sync'], function(){
+gulp.task('watch', ['browser-sync'], function () {
 	gulp.watch('assets/less/**/*.less', ['less']);
 	gulp.watch('assets/*.html').on('change', browserSync.reload);
-	gulp.watch(['assets/js/*.js', '!assets/js/main.js'], ['scripts']);
+	gulp.watch('assets/js/*.js').on('change', browserSync.reload);
 });
 
 // Clean folder 'dist'
-gulp.task('clean', function(){
+gulp.task('clean', function () {
 	return del.sync('dist')
 });
 
 // Build
-gulp.task('build', ['clean'],  function(){
+gulp.task('build', ['clean'], function () {
 	//html
 	var buildHtml = gulp.src('assets/*.html')
 		.pipe(gulp.dest('dist/'));
@@ -84,12 +73,12 @@ gulp.task('build', ['clean'],  function(){
 	var buildImage = gulp.src('assets/img/**/*')
 		.pipe(imagemin({
 			interlaced: true, //gif
-	    progressive: true, //jpg
-	    optimizationLevel: 5, //png
-	    svgoPlugins: [{removeViewBox: false}] //svg
+			progressive: true, //jpg
+			optimizationLevel: 5, //png
+			svgoPlugins: [{removeViewBox: false}] //svg
 		}))
 		.pipe(gulp.dest('dist/img'));
 });
 
 // Default таск
-gulp.task('default', ['less', 'scripts', 'watch']);
+gulp.task('default', ['less', 'watch']);

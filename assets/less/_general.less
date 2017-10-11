@@ -4,18 +4,22 @@ html, body {
 	color: @base_font_color;
 }
 
-.wrapper {
+.container-fluid {
 	max-width: 1366px;
-	margin: 0 auto;
 }
 
-h1, .h1, h2, .h2, h3, .h3,
-h4, .h4, h5, .h5, h6, .h6 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: @font_segoe;
 	text-transform: uppercase;
 }
 
-.btn.btn-default {
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	display: inline-block;
+	padding: 3px;
+	background: @color_dark_blue;
+}
+
+.btn.btn-defo {
 	border: 1px solid @color_btn;
 	border-radius: 5px;
 	background: transparent;
@@ -23,7 +27,8 @@ h4, .h4, h5, .h5, h6, .h6 {
 	font-family: @font_segoe;
 	font-weight: 900;
 	outline: none;
-	&:active {
+	&:active,
+	&:hover {
 		border-color: @color_btn;
 		background: @color_btn;
 		color: @white_font_color;
