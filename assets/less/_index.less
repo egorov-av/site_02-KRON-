@@ -149,6 +149,7 @@
 		}
 		& .h5 {
 			margin: 0;
+			font-size: 17px;
 		}
 	}
 	&_title {
@@ -207,6 +208,135 @@
 		&_img {
 			position: relative;
 			margin-left: 30px;
+		}
+	}
+}
+
+.ship {
+	&_title {
+		display: inline-block;
+		font-size: 19px;
+		float: left;
+		margin: -6px 0 0;
+		padding: 5px 15px;
+	}
+	&_content {
+		& .text {
+			text-align: justify;
+			font-weight: 400;
+			margin-bottom: 3.06%; /* 20px / 653px */
+			&.lead {
+				margin-top: 17px;
+				font-size: 29px;
+			}
+			&.text-1 {
+				padding: 10px 10px 15px;
+				font-size: 17px;
+			}
+			&.text-2 {
+				padding: 2.3% 0; /* 15px / 653px */
+				font-size: 15px;
+			}
+		}
+		&_icon {
+			margin: 20% auto 0;
+		}
+		& .h5 {
+			font-size: 17px;
+			margin: 0;
+		}
+		&_img {
+			margin-bottom: 6%; /* 35px / 600px */
+		}
+	}
+	& .carousel {
+		margin-bottom: 35px;
+		&-control {
+			color: @base_font_color;
+			text-shadow: none;
+			opacity: 1;
+			& .glyphicon-menu-left {
+				position: absolute;
+				top: 40%;
+				left: 0;
+				font-size: 30px;
+			}
+			& .glyphicon-menu-right {
+				position: absolute;
+				top: 40%;
+				right: 0;
+				font-size: 30px;
+			}
+		}
+		&-control.left {
+			background: none;
+		}
+		&-control.right {
+			background: none;
+		}
+		&-indicators {
+			bottom: -30px;
+			& li {
+				background-color: @base_font_color;
+				border: 1px solid @base_font_color;
+			}
+			& .active {
+				background-color: @white_font_color;
+				border: 1px solid @base_font_color;
+			}
+		}
+		& .item {
+			height: 140px;
+			padding-right: 4.59%; /* 30px / 653px */
+			padding-left: 4.59%; /* 30px / 653px */
+		}
+		&_text {
+			float: left;
+			width: 74.27%;
+			padding: 2.3% 2.3% 0; /* 15px / 653px */
+			margin-top: 15px;
+			margin-right: 0.77%; /* 5px / 653px */
+			& h5 {
+				margin-bottom: 1.53%; /* 10px / 653px */
+			}
+			& p {
+				display: table-cell;
+				vertical-align: top;
+				height: 60px;
+			}
+		}
+		&_img {
+			float: right;
+			width: 24.96%;
+			height: inherit;
+		}
+	}
+	&_line {
+		& > div {
+			display: inline-block;
+		}
+		& h3 {
+			font-size: 39px;
+			font-weight: 900;
+			padding: 10px 15px;
+			border-radius: 0 10px 0 0;
+			margin: 0 20px 0 0 ;
+			& span {
+				color: @base_font_color;
+				text-shadow: 0 0 3px @white_font_color;
+			}
+		}
+		&_btn {
+			position: relative;
+			& * {
+				font-family: @font_segoe;
+				font-size: 19px;
+				font-weight: 900;
+			}
+		}
+		&_img {
+			position: relative;
+			margin-right: 30px;
 		}
 	}
 }
