@@ -8,6 +8,7 @@
 	.service_auto,
 	.service_ship,
 	.service_food {
+		width: auto;
 		margin-bottom: 2.2%; /* 30px / 1366px */
 		padding-bottom: 0.73%; /* 10px / 1366px */
 		& p {
@@ -70,6 +71,15 @@
 				position: relative;
 				bottom: -1px;
 			}
+		}
+		& .carousel_text {
+			width: 100%;
+		}
+		& .carousel_img {
+			width: 0;
+		}
+		& .carousel-control span {
+			display: none;
 		}
 	}
 
@@ -146,6 +156,10 @@
 		clip-path: polygon(0 0, 10% 0, 10% 5%, 90% 5%, 90% 0, 100% 0, 100% 20%, 95% 20%, 95% 80%, 100% 80%, 100% 100%, 90% 100%, 90% 95%, 10% 95%, 10% 100%, 0 100%, 0 80%, 5% 80%, 5% 20%, 0 20%);
 	}
 
+	.ship .carousel-control span {
+		display: block;
+	}
+
 	.food {
 		&_item_hide p {
 			height: 205px;
@@ -157,7 +171,7 @@
 	}
 
 	.info_content_form {
-		width: 80%;
+		width: 90%;
 		margin: 10px auto;
 	}
 }
@@ -171,15 +185,12 @@
 	.service_auto,
 	.service_ship,
 	.service_food {
-		width: 80%;
+		width: 70%;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
 	.auto {
-		&_content {
-			.service_auto;
-		}
 		&_townSelect {
 			margin-top: 0;
 		}
@@ -205,9 +216,6 @@
 	}
 
 	.ship {
-		&_content {
-			.service_ship;
-		}
 		&_line {
 			text-align: justify;
 			&::after {
@@ -223,12 +231,15 @@
 				bottom: -20px;
 			}
 		}
+		& .carousel_text {
+			width: 74.27%;
+		}
+		& .carousel_img {
+			width: 24.96%;
+		}
 	}
 
 	.food {
-		&_content {
-			.service_food;
-		}
 		&_lead {
 			& p.lead {
 				padding: 0 50px;
@@ -258,7 +269,7 @@
 	}
 
 	.info_content_form .form-group {
-		width: 31%;
+		width: 32%;
 		margin-right: 10px;
 	}
 }
@@ -270,16 +281,7 @@
 		left: -19.29%; /* 60px / 311px */
 	}
 
-	.service_auto,
-	.service_ship,
-	.service_food {
-		width: 60%;
-	}
-
 	.auto {
-		&_content {
-			width: auto;
-		}
 		&_img {
 			clip-path: polygon(0 0, 0% 100%, 60% 100%, 100% 35%, 100% 0);
 		}
@@ -306,9 +308,6 @@
 	}
 
 	.ship {
-		&_content {
-			width: auto;
-		}
 		&_line {
 			text-align: left;
 			&::after {
@@ -330,9 +329,6 @@
 	}
 
 	.food {
-		&_content {
-			width: auto;
-		}
 		&_item_hide p {
 			height: 235px;
 		}
@@ -358,6 +354,7 @@
 
 	.info_content_form {
 		width: auto;
+		margin: 10px 0;
 	}
 }
 
