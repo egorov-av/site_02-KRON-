@@ -462,3 +462,42 @@
 	}
 }
 
+.info {
+	&_content {
+		padding-bottom: 3.74%; /* 50px / 1336px */
+		padding-top: 1.5%; /* 20px / 1336px */
+		&_text {
+			&_item {
+				font-size: 18px;
+				font-weight: 700;
+				padding: 1.86% 2.78%; /* 10px & 15px / 539px */
+				text-align: justify;
+				margin-bottom: 3.71%; /* 20px / 539px */
+			}
+		}
+		&_form {
+			background: @color_food_form;
+			box-shadow: 0 0 15px @base_font_color;
+			padding: 10px;
+			&_text {
+				color: @white_font_color;
+				border-bottom: 2px solid @white_font_color;
+				font-size: 15px;
+				font-weight: 700;
+				padding-bottom: 10px;
+			}
+			& .form-control {
+				width: 100%;
+				font-size: 12px;
+				font-weight: 700;
+				border-radius: 10px;
+				border: 2px @base_font_color;
+				box-shadow: 0 0 10px @base_font_color;
+			}
+			& .btn {
+				font-size: 17px;
+				padding: 3px 15px;
+			}
+		}
+	}
+}
