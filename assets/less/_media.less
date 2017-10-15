@@ -143,6 +143,35 @@
 			padding-left: 0;
 		}
 	}
+
+	.partnerShip {
+		&_text {
+			margin-top: 10px;
+			& p {
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+			& span {
+				float: none;
+				display: block;
+				width: 61.5px;
+			}
+		}
+		&_content {
+			&_img {
+				margin-left: auto;
+				margin-right: auto;
+			}
+			& .carousel-control span {
+				display: none;
+			}
+		}
+		& .carousel {
+			&_text {
+				height: 200px;
+			}
+		}
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -182,6 +211,25 @@
 	.info_content_form {
 		width: 90%;
 		margin: 10px auto;
+	}
+
+	.partnerShip {
+		&_text {
+			margin-top: 0;
+			& p {
+				margin-right: 16.85%; /* 110px / 653px */
+			}
+			& span {
+				margin-top: 4%;
+				float: right;
+			}
+		}
+		& .carousel-control span {
+			display: block;
+		}
+		& .carousel_text {
+			width: 100%;
+		}
 	}
 }
 
@@ -289,6 +337,20 @@
 			margin-bottom: -100px;
 		}
 	}
+
+	.partnerShip {
+		& .carousel_text {
+			width: 64.32%; /* 420px / 653px */
+		}
+		& .carousel {
+			& .item {
+				height: 200px;
+			}
+			&_text {
+				height: 170px;
+			}
+		}
+	}
 }
 
 /* Medium Devices, Desktops -md- */
@@ -387,6 +449,20 @@
 				& .registration_text_step {
 					margin-top: 11px;
 				}
+			}
+		}
+	}
+
+	.partnerShip {
+		&_text span {
+			margin-top: 7%;
+		}
+		& .carousel {
+			& .item {
+				height: 220px;
+			}
+			&_text {
+				height: 200px;
 			}
 		}
 	}
