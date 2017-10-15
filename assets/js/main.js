@@ -12,5 +12,5 @@ function setEqualHeight(column) {
 }
 
 $(document).ready(function () {
-	setEqualHeight($('.service .column'));
+	setEqualHeight($('.column'));
 });

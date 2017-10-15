@@ -4,3 +4,167 @@
 		padding-bottom: 13.1%; /* 175px / 1336px */
 	}
 }
+
+.registration {
+	&_head {
+		& h3 {
+			display: inline-block;
+			font-size: 24px;
+			padding: 0 5px;
+			text-transform: none;
+		}
+		& p {
+			font-size: 44px;
+			padding: 0 15px;
+		}
+	}
+	&_btn {
+		text-align: center;
+		border: 15px solid @color_btn_blue;
+		border-radius: 50%;
+		padding: 15px;
+		width: 290px;
+		position: relative;
+		& > div {
+			display: inline-block;
+			background: @color_btn_blue;
+			color: @white_font_color;
+			padding: 55px 10px 5px;
+			border-radius: 50%;
+		}
+		& p {
+			font-size: 17px;
+			font-weight: 700;
+			margin-bottom: 0;
+			& span {
+				font-family: @font_segoe;
+				font-size: 48px;
+				font-weight: 900;
+				line-height: .9;
+			}
+		}
+		& .btn {
+			padding: 0;
+			font-size: 19px;
+			& span {
+				color: @white_font_color;
+				font-size: 60px;
+			}
+			&.btn-defo {
+				background: transparent;
+				border: 0;
+			}
+			&:hover {
+				color: rgba(199, 86, 48, .8);
+			}
+		}
+	}
+	&_leadText {
+		& h4 {
+			font-size: 19px;
+			font-weight: 900;
+			padding: 9px;
+		}
+		& p {
+			font-size: 17px;
+			font-weight: 700;
+			margin-bottom: 30px;
+		}
+	}
+	&_text {
+		&_title {
+			border-bottom: 3px solid @base_font_color;
+			margin-bottom: 10px;
+			& h4 {
+				font-size: 27px;
+				text-transform: none;
+			}
+			& p {
+				font-family: @font_segoe;
+				font-size: 15px;
+				font-weight: 900;
+			}
+		}
+		& h4 {
+			display: inline-block;
+			margin-bottom: 0;
+		}
+		& p {
+			padding: 15px 10px;
+			font-size: 15px;
+			font-weight: 700;
+		}
+		&_item {
+			margin-bottom: 30px;
+		}
+		&_step {
+			max-width: 390px;
+			& p,
+			& .radio {
+				font-family: @font_segoe;
+				font-size: 10px;
+				font-weight: 900;
+				margin: 0 0 3px 65px;
+				padding: 0 0 0 5px;
+				background: @color_light_grey;
+				border-radius: 5px;
+			}
+			& input:focus {
+				outline: none;
+			}
+			& span {
+				font-family: @font_antiqua;
+				font-size: 39px;
+				font-weight: 700;
+				border: 3px solid @color_btn_blue;
+				border-radius: 50%;
+				padding: 0 18px;
+				float: left;
+			}
+			& .btn {
+				font-size: 10px;
+				margin-bottom: 3px;
+				margin-top: 3px;
+				border-color: @base_font_color;
+				background-color: transparent;
+				&:hover {
+					transform: scale(1.03);
+				}
+				&:focus,
+				&:active {
+					outline: none;
+					border-color: @base_font_color;
+				}
+			}
+			& div.step3 {
+				background: @color_light_grey;
+				border-radius: 5px;
+				margin-left: 65px;
+				padding: 10px 25px;
+				font-family: @font_segoe;
+				& h5 {
+					margin-top: 0;
+				}
+				& p {
+					margin: 0;
+					padding: 0;
+				}
+				& a {
+					color: @color_btn;
+				}
+			}
+		}
+	}
+	& p.insertion {
+		margin-bottom: 0;
+	}
+	& h4.insertion {
+		margin-top: 0;
+		float: right;
+		margin-bottom: 10px;
+	}
+	& .auto_line {
+		border-bottom: 5px solid @color_dark_blue;
+	}
+}
+
