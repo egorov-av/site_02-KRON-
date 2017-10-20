@@ -247,6 +247,34 @@
 				bottom: -1px;
 			}
 		}
+		&_form {
+			width: auto;
+			margin-left: auto;
+			margin-right: auto;
+			&_title {
+				margin-bottom: 10px;
+			}
+			& .insetForm {
+				top: 0;
+				right: 0;
+				margin-bottom: 10px;
+				&_right {
+					float: none;
+				}
+				&_left {
+					float: none;
+					margin-right: 18px;
+					text-align: center;
+					&_label {
+						display: inline-block;
+						margin-bottom: 10px;
+						&:first-child {
+							margin-top: 0;
+						}
+					}
+				}
+			}
+		}
 	}
 
 	.cooperation {
@@ -333,6 +361,33 @@
 		}
 		&_item h4 {
 			margin-right: 100px;
+		}
+		&_form {
+			width: 375px;
+			margin-bottom: 10px;
+			&_title {
+				margin-bottom: 0;
+			}
+			& .insetForm {
+				top: -35px;
+				right: -30px;
+				margin-bottom: -35px;
+				&_right {
+					float: left;
+				}
+				&_left {
+					float: left;
+					margin-right: 0;
+					text-align: left;
+					&_label {
+						display: block;
+						margin-bottom: 7px;
+						&:first-child {
+							margin-top: 37px;
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -717,6 +772,10 @@
 				margin-right: 1px;
 			}
 		}
+		&_form {
+			float: right;
+			margin-right: 30px;
+		}
 	}
 
 	.cooperation {
@@ -783,8 +842,13 @@
 	//		margin-top: 0;
 	//	}
 	//}
-	.partnerFood_line h3 {
-		margin-left: 10px;
+	.partnerFood_line {
+		& h3 {
+			margin-left: 10px;
+		}
+		&_btn {
+			margin-left: 4.49%; /* 60px / 1336px */
+		}
 	}
 
 	.cooperation_form {

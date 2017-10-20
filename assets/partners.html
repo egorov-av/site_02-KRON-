@@ -509,7 +509,42 @@
 						</div>
 					</div><!-- .partnerFood_text_item -->
 
-					//************ form
+					<div class="partnerFood_form">
+						<h4 class="partnerFood_form_title h4">
+							KRON FOOD
+						</h4>
+
+						<div class="insetForm">
+							<form action="#" method="post">
+
+								<div class="insetForm_left">
+									<label for="check1" class="insetForm_left_label">
+										<input type="radio" id="check1" name="check" class="insetForm_left_checkbox" checked="checked">
+										<span class="insetForm_left_checkbox_square"></span>
+										<span class="insetForm_left_checkbox_text">КЛИЕНТ</span>
+									</label>
+									<label for="check2" class="insetForm_left_label">
+										<input type="radio" id="check2" name="check" class="insetForm_left_checkbox">
+										<span class="insetForm_left_checkbox_square"></span>
+										<span class="insetForm_left_checkbox_text">ПАРТНЕР</span>
+									</label>
+								</div><!-- .insetForm_left -->
+
+								<div class="insetForm_right">
+									<input type="text" placeholder="_________ваше имя_________" name="userName" required>
+									<input type="email" placeholder="_________ваш e-mail________" name="userEmail" required>
+									<p class="insetForm_right_footnote">
+										* Подробности вы&nbsp;получите на&nbsp;Ваш
+										<nobr>e-mail</nobr>
+									</p>
+									<button type="submit" class="btn btn-defo">
+										Отправить
+									</button>
+								</div><!-- .insetForm_right -->
+
+							</form>
+						</div><!-- .insetForm -->
+					</div><!-- .partnerFood_form -->
 				</div><!-- .col-md-6 -->
 
 				<div class="partnerFood_line col-xs-12">
@@ -596,11 +631,11 @@
 
 						<form class="form-inline" method="post">
 							<div class="form-group">
-								<input type="text" class="form-control" name="InputName" placeholder="_________введите имя_________">
+								<input type="text" class="form-control" name="InputName" placeholder="_________введите имя_________" required>
 							</div>
 							<div class="form-group">
 								<input type="email" class="form-control" name="InputEmail"
-											 placeholder="________введите e-mail________">
+											 placeholder="________введите e-mail________" required>
 							</div>
 							<button type="submit" name="submit" class="btn btn-defo">
 								ОТПРАВИТЬ
