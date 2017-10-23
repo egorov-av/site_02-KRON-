@@ -4,6 +4,7 @@ var gulp = require('gulp'),
 	postcss = require('gulp-postcss'),
 	sourcemaps = require('gulp-sourcemaps'),
 	notify = require('gulp-notify'),
+	concat = require('gulp-concat'),
 	uglify = require('gulp-uglifyjs'),
 	imagemin = require('gulp-imagemin'),
 	del = require('del'),
@@ -22,6 +23,16 @@ gulp.task('less', function () {
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('assets/css/'))
 		.pipe(browserSync.reload({stream: true}))
+});
+
+// JS
+gulp.task('js', function () {
+	return gulp.src([
+		'assets/libs/matchHeight/jqueryMatchHeight.js',
+		'assets/js/custom.js'
+	])
+		.pipe(concat('main.js'))
+		.pipe(gulp.dest('assets/js/'))
 });
 
 // Browser-sync
@@ -81,4 +92,4 @@ gulp.task('build', ['clean'], function () {
 });
 
 // Default таск
-gulp.task('default', ['less', 'watch']);
+gulp.task('default', ['less', 'js', 'watch']);
