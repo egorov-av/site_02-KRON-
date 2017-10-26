@@ -7,13 +7,14 @@ var gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	uglify = require('gulp-uglifyjs'),
 	imagemin = require('gulp-imagemin'),
+	spritesmith = require('gulp.spritesmith'),
 	del = require('del'),
 	csso = require('gulp-csso'),
 	browserSync = require('browser-sync');
 
 // Less
 gulp.task('less', function () {
-	return gulp.src('assets/less/main.less')
+	return gulp.src('assets/less/[^_]*.less')
 		.pipe(sourcemaps.init())
 		.pipe(less())
 		.on("error", notify.onError(function (error) {
@@ -23,6 +24,22 @@ gulp.task('less', function () {
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('assets/css/'))
 		.pipe(browserSync.reload({stream: true}))
+});
+
+// Sprite
+gulp.task('sprite', function () {
+	var spriteData =
+		gulp.src('assets/img/sprite/*.*')
+			.pipe(spritesmith({
+				imgName: 'sprite.png',
+				imgPath: '../img/footer/sprite.png',
+				cssName: '_sprite.less',
+				padding: 10,
+				cssFormat: 'less',
+				algorithm: 'binary-tree'
+			}));
+	spriteData.img.pipe(gulp.dest('assets/img/footer/'));
+	spriteData.css.pipe(gulp.dest('assets/less/'));
 });
 
 // JS
@@ -50,7 +67,7 @@ gulp.task('browser-sync', function () {
 gulp.task('watch', ['browser-sync'], function () {
 	gulp.watch('assets/less/**/*.less', ['less']);
 	gulp.watch('assets/*.html').on('change', browserSync.reload);
-	gulp.watch('assets/js/*.js').on('change', browserSync.reload);
+	gulp.watch('assets/js/*.js', ['js']).on('change', browserSync.reload);
 });
 
 // Clean folder 'dist'
@@ -81,7 +98,7 @@ gulp.task('build', ['clean'], function () {
 		.pipe(uglify())
 		.pipe(gulp.dest('dist/js'));
 	//images
-	var buildImage = gulp.src('assets/img/**/*')
+	var buildImage = gulp.src(['!assets/img/sprite/**/*', 'assets/img/**/*'])
 		.pipe(imagemin({
 			interlaced: true, //gif
 			progressive: true, //jpg
