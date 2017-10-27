@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Bootstrap min CSS -->
+	<link rel="stylesheet" href="libs/bootstrap%203.3.7/css/bootstrap.min.css">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/header.css">
+	<title>Header</title>
+</head>
+<body style="background: url(img/base_background.jpg);">
+
+<header class="header">
+	<div class="container-fluid">
+		<div class="header_content">
+			<div class="row">
+
+				<div class="header-left">
+					<div class="header_account clearfix">
+						<!-- for login -->
+						<div class="header_account_img hidden-xs" style="background: url(img/header/your_photo.jpg) center; display: none;">
+						</div><!-- .header_account_img -->
+
+						<!-- for user -->
+						<div class="header_account_img" style="background: url(img/header/user_photo.jpg) center; background-size:cover; display: block;">
+							<!-- duplication link for user link ЛИЧНЫЙ КАБИНЕТ -->
+							<a href="#"></a>
+						</div><!-- .header_account_img -->
+
+						<!-- button for mobile login -->
+						<div class="header_account_hide" style="display: none;">
+							<button class="btn h3" data-toggle="modal" data-target="#registration">
+								вход
+							</button>
+						</div><!-- .header_account_hide -->
+
+						<!-- login -->
+						<div class="header_account_login hidden-xs" style="display: none;">
+							<div class="btn-group-xs">
+								<button type="button" class="btn btn-defo" data-toggle="modal" data-target="#registration">
+									ВХОД
+								</button>
+								<span>или</span>
+								<button type="button" class="btn btn-defo" data-toggle="modal" data-target="#registration">
+									СОЗДАТЬ АККАУНТ
+								</button>
+							</div><!-- .btn-group-xs -->
+						</div><!-- .header_account_login -->
+
+						<!-- user -->
+						<div class="header_account_user text-right hidden-xs" style="display: block;">
+							<p class="user text-left">
+								Иван Иванович!
+								<br>
+								г. Санкт-Петербург
+							</p>
+							<a href="#" class="btn btn-defo btn-xs">
+								ЛИЧНЫЙ КАБИНЕТ
+							</a>
+						</div><!-- .header_account_user -->
+
+						<form action="#" method="get" class="hidden-xs">
+							<div class="input-group input-group-sm">
+								<input type="text" class="form-control" placeholder="Search">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="submit">
+										<i class="glyphicon glyphicon-search"></i>
+									</button>
+								</span>
+							</div><!-- /input-group -->
+						</form>
+					</div><!-- .header_account -->
+
+					<div class="header_kron hidden-xs">
+						<p class="header_kron_text">
+							• car • ship • food • service •
+						</p>
+						<h1 class="header_kron_head">
+							<a href="/">
+								KRON
+							</a>
+						</h1>
+					</div><!-- .header_kron -->
+				</div><!-- .header-left -->
+
+				<div class="header-right">
+					<nav class="navbar navbar-default">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+											data-target="#kron-navbar-collapse">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div><!-- .navbar-header -->
+
+						<div class="collapse navbar-collapse" id="kron-navbar-collapse">
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">
+									О СЕРВИСЕ
+								</a></li>
+								<li><a href="#">
+									КЛИЕНТАМ
+								</a></li>
+								<li class="active"><a href="#">
+									ПАРТНЕРАМ
+								</a></li>
+								<li><a href="#">
+									НОВОСТИ
+								</a></li>
+								<li><a href="#">
+									FAQ
+								</a></li>
+								<li class="disabled">&nbsp;</li>
+							</ul><!-- .nav -->
+						</div><!-- .collapse -->
+					</nav>
+				</div><!-- .header-right -->
+
+				<!-- button for mobile .header-center toggle -->
+				<div class="header-center-toggle text-center visible-xs">
+					<button id="service" class="btn h3">
+						О сервисе
+					</button>
+				</div><!-- .header-center-toggle -->
+
+				<div class="header-center">
+					<div class="header_about" style="background: url(img/base_background.jpg);">
+						<p class="header_about_title text-right">
+							Приятного пользования!
+							<span>АДМИНИСТРАЦИЯ</span>
+						</p>
+
+						<div class="header_about_text block-line">
+							<h3 class="h3">
+								КАЖДАЯ МИНУТА НА СЧЕТУ
+							</h3>
+							<p class="lead text-justify">
+								Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
+								Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
+							</p>
+						</div><!-- .header_about_text -->
+
+						<div class="header_about_button">
+							<a href="#" type="button" class="h4">
+								KRON AUTO
+							</a>
+							<a href="#" type="button" class="h4">
+								KRON SHIP
+							</a>
+							<a href="#" type="button" class="h4">
+								KRON FOOD
+							</a>
+						</div><!-- .header_about_button -->
+					</div><!-- .header_about -->
+				</div><!-- .header-center -->
+
+			</div><!-- .row -->
+		</div><!-- .header_content -->
+	</div><!-- .container-fluid -->
+</header>
+
+<!-- write code -->
+
+<!-- jQuery first, then Bootstrap JS -->
+<script src="libs/jquery%203.2.1/jquery-3.2.1.min.js"></script>
+<script src="libs/bootstrap%203.3.7/js/bootstrap.min.js"></script>
+<!-- Custom js -->
+<script src="js/main.js"></script>
+</body>
+</html>
