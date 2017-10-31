@@ -1,0 +1,192 @@
+#registration,
+#login,
+#agreement {
+	& .modal-dialog {
+		//width: 43.06%; /* 620px / 1440px */
+	}
+	& .modal-content {
+		background-color: rgba(31, 26, 23, 0.9);
+		border-radius: 24px;
+		box-shadow: 0 0 7px rgba(255, 255, 255, 0.33);
+		padding: 30px 50px;
+	}
+	& .modal-header {
+		padding: 0;
+		position: relative;
+	}
+	& .close {
+		font-size: 54px;
+		color: @color_dark_grey;
+		position: absolute;
+		top: -15px;
+		right: -28px;
+		&:focus {
+			outline: none;
+		}
+	}
+	& .modal-title {
+		color: @white_font_color;
+		font-size: 24px;
+		font-weight: 900;
+	}
+	& .modal-body {
+		border-bottom: 1px solid #e5e5e5;
+		padding-top: 3.17%; /* 15px / 473px */
+		& .btn[type="submit"] {
+			font-family: @font_segoe;
+			font-size: 19px;
+			font-weight: 900;
+			letter-spacing: 2px;
+			padding: 0 10px;
+			margin-top: 3.17%; /* 15px / 473px */
+		}
+	}
+	& .form-horizontal {
+		& input[type='radio'] {
+			display: none;
+			& + label {
+				color: @white_font_color;
+				font-family: @font_segoe;
+				font-size: 19px;
+				font-weight: 900;
+				background-color: transparent;
+				border: 3px solid white;
+				border-radius: 10px;
+				padding: 5px 20px;
+				cursor: pointer;
+				margin-bottom: 3.17%; /* 15px / 473px */
+			}
+			&:checked + label {
+				background-color: @white_font_color;
+				color: @base_font_color;
+			}
+			&:first-child + label {
+				margin-right: 4.23%; /* 20px / 473px */
+			}
+		}
+		& p.form_text {
+			color: @white_font_color;
+			font-family: @font_segoe;
+			font-size: 12px;
+			font-weight: 900;
+			letter-spacing: 3px;
+			margin-bottom: 3.17%; /* 15px / 473px */
+			& a {
+				color: @white_font_color;
+				text-decoration: none;
+				border-bottom: 1px solid @white_font_color;
+				&:hover,
+				&:focus {
+					text-decoration: none;
+					border-bottom: 1px dotted @white_font_color;
+				}
+			}
+		}
+	}
+	& .form-group {
+		margin-bottom: 3.17%; /* 15px / 473px */
+	}
+	& .control-label {
+		color: @white_font_color;
+		font-family: @font_segoe;
+		font-size: 17px;
+		font-weight: 900;
+		text-align: center;
+		padding: 4px;
+		border-top: 1px solid @color_btn_blue;
+		border-bottom: 1px solid @color_btn_blue;
+	}
+	& .form-control {
+		background-color: #c2c2c2;
+		border: 2px solid @color_btn_blue;
+		border-radius: 10px;
+		box-shadow: 0 0 8px 2px rgba(255,255,255, 0.2);
+		font-size: 17px;
+		height: 35px;
+	}
+	& .form-checked {
+		margin-bottom: 5px;
+		& .form-control {
+			position: relative;
+			display: none;
+			& + label::before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 6px;
+				left: 20px;
+				width: 17px;
+				height: 17px;
+				border: 1px solid @white_font_color;
+				border-radius: 3px;
+			}
+			&:checked + label::before {
+				background: url(../img/partners/check.png) center no-repeat;
+				border: 1px solid @color_btn;
+			}
+		}
+		& .control-label {
+			font-family: @font_antiqua;
+			font-size: 12px;
+			font-weight: 700;
+			float: left;
+			margin-left: 35px;
+			border: none;
+			text-align: left;
+			& a {
+				color: @white_font_color;
+				border-bottom: 1px solid @white_font_color;
+				&:hover,
+				&:focus {
+					text-decoration: none;
+					border-bottom: 1px dotted @white_font_color;
+				}
+			}
+		}
+	}
+	& .form-link {
+		margin-bottom: 0;
+		& p {
+			font-size: 15px;
+			font-weight: 900;
+			letter-spacing: 1px;
+			border: none;
+			margin: 0;
+			& a {
+				color: @white_font_color;
+				text-decoration: underline;
+				&:hover,
+				&:focus {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+#agreement {
+	& .modal-title {
+		font-size: 17px;
+		margin-bottom: 5px;
+	}
+	& .modal-agreement {
+		border: 1px solid @white_font_color;
+		padding: 8px 18px 8px 15px;
+		max-height: 425px;
+		overflow-y: auto;
+		color: @white_font_color;
+		font-size: 15px;
+		font-weight: 700;
+		text-align: justify;
+		& h5 {
+			font-family: @font_antiqua;
+			margin: 20px 0;
+			text-transform: none;
+			font-size: 15px;
+			font-weight: 700;
+		}
+		& a {
+			color: @white_font_color;
+		}
+	}
+}

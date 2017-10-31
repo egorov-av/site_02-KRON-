@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Bootstrap min CSS -->
+	<link rel="stylesheet" href="libs/bootstrap%203.3.7/css/bootstrap.min.css">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/modal.css">
+	<title>Партнеры</title>
+</head>
+<body style="background: url(img/base_background.jpg);">
+
+<button class="btn btn-defo btn-xs text-uppercase" data-toggle="modal" data-target="#registration">
+	registration
+</button>
+<button class="btn btn-defo btn-xs text-uppercase" data-toggle="modal" data-target="#login">
+	login
+</button>
+
+<!-- **** Modal blocks **** -->
+<!-- registering -->
+<div class="modal" id="registration" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="myModalLabel">РЕГИСТРАЦИЯ KRON</h4>
+			</div>
+			<div class="modal-body text-center">
+				<form action="#" method="post" class="form-horizontal">
+
+						<input type="radio" name="user" value="klient" id="user1" checked>
+						<label for="user1">Я КЛИЕНТ</label>
+
+						<input type="radio" name="user" value="partner" id="user2">
+						<label for="user2">Я ПАРТНЕР</label>
+
+					<p class="form_text">
+						Есть аккаунт KRON?
+						<a href="javascript:void(0);" data-toggle="modal" data-target="#login" data-dismiss="modal">
+							Вход
+						</a>
+					</p>
+
+					<div class="form-group">
+						<label for="inputName" class="col-sm-6 control-label">ВАШЕ ИМЯ</label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="inputName" required>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="inputPhone" class="col-sm-6 control-label">ВАШ ТЕЛЕФОН</label>
+						<div class="col-sm-6">
+							<input type="tel" class="form-control" id="inputPhone" required>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="inputEmail" class="col-sm-6 control-label">ВАШ E-MAIL</label>
+						<div class="col-sm-6">
+							<input type="email" class="form-control" id="inputEmail" required>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="inputPass" class="col-sm-6 control-label">ПАРОЛЬ</label>
+						<div class="col-sm-6">
+							<input type="password" class="form-control" id="inputPass" required>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="inputRepeatPass" class="col-sm-6 control-label">ПОВТОРИТЕ ПАРОЛЬ</label>
+						<div class="col-sm-6">
+							<input type="password" class="form-control" id="inputRepeatPass" required>
+						</div>
+					</div>
+
+					<div class="form-group form-checked">
+						<div class="col-sm-offset-2 col-sm-10">
+							<input type="checkbox" class="form-control" id="inputTake" required>
+							<label for="inputTake" class="control-label">
+								Согласен на обработку персональных данных
+							</label>
+						</div>
+					</div>
+
+					<div class="form-group form-checked">
+						<div class="col-sm-offset-2 col-sm-10">
+							<input type="checkbox" class="form-control" id="inputAgreement" required checked>
+							<label for="inputAgreement" class="control-label">
+								Я принимаю
+								<a href="javascript:void(0);" data-toggle="modal" data-target="#agreement" data-dismiss="modal">
+									пользовательское соглашение
+								</a>
+							</label>
+						</div>
+					</div>
+
+					<button type="submit" class="btn btn-defo">РЕГИСТРАЦИЯ</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div><!-- #registration -->
+
+<!-- login -->
+<div class="modal" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="myModalLabel2">ВХОД В АККАУНТ</h4>
+			</div>
+			<div class="modal-body text-center">
+				<form action="#" method="post" class="form-horizontal">
+
+					<div class="form-group">
+						<label for="inputEmailLogin" class="col-sm-6 control-label">ВАШ E-MAIL</label>
+						<div class="col-sm-6">
+							<input type="email" class="form-control" id="inputEmailLogin" required>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="inputPassLogin" class="col-sm-6 control-label">ПАРОЛЬ</label>
+						<div class="col-sm-6">
+							<input type="password" class="form-control" id="inputPassLogin" required>
+						</div>
+					</div>
+
+					<div class="form-group form-link">
+							<p class="control-label">
+								Пользуетесь сервисом KRON впервые?
+								<a href="javascript:void(0);" data-toggle="modal" data-target="#registration" data-dismiss="modal">
+									Регистрация
+								</a>
+							</p>
+					</div><!-- .form-link -->
+
+					<button type="submit" class="btn btn-defo">ВХОД</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div><!-- #login -->
+
+<!-- agreement -->
+<div class="modal" id="agreement" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"  data-toggle="modal" data-target="#registration" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="myModalLabel3">
+					СОГЛАШЕНИЕ О КОНФИДЕНЦИАЛЬНОСТИ И
+					ИСПОЛЬЗОВАНИИ ДАННЫХ (ДАЛЕЕ СОГЛАШЕНИЕ)
+				</h4>
+			</div>
+			<div class="modal-body modal-agreement">
+				<p>Создавая учетную запись в&nbsp;приложениях (регистрация в&nbsp;Личном кабинете на&nbsp;сайте http://kron.space), правообладателем которых является <nobr>ООО &laquo;Меркурий&raquo;</nobr>, пользователь подтверждает свое согласие с&nbsp;условиями Соглашения и&nbsp;достоверность предоставленных персональных данных, а&nbsp;также руководствуясь положениями Федерального закона от&nbsp;27 июля 2006 года &#8470;&nbsp;<nobr>152-ФЗ</nobr> &laquo;О&nbsp;персональных данных&raquo;, выражает свое согласие на&nbsp;обработку <nobr>ООО &laquo;Меркурий&raquo;</nobr> (далее&nbsp;&mdash; &laquo;Компания&raquo;) персональных данных пользователя, в&nbsp;том числе адреса электронной почты, фотоизображения, спользуемых Компанией для целей обозначенных в&nbsp;настоящем Соглашении, в&nbsp;том числе путем смешанной обработки персональных данных (автоматизированным и&nbsp;неавтоматизированным способами), с&nbsp;передачей таких данных по&nbsp;внутренней сети Компании и&nbsp;сети Интернет.</p>
+				<h5>Использование данных.</h5>
+				<p>При создании учетной записи указанные данные используются для создания уникального идентификатора, который может быть использован во&nbsp;всех приложениях сайта http://kron.space, правообладателем которых является Компания и&nbsp;используемый для идентификации пользователя при его входе в&nbsp;приложение.</p>
+				<p>Обработка персональных данных пользователя в&nbsp;целях, указанных в&nbsp;настоящем Соглашении может осуществляться Компанией, в&nbsp;том числе, с&nbsp;привлечением партнеров путем распространения (передачи) персональных данных строго на&nbsp;условиях обеспечения режима конфиденциальности и&nbsp;в&nbsp;соответствии с&nbsp;действующим законодательством РФ.</p>
+				<p>Предоставляя свои данные, пользователь соглашается с&nbsp;тем, что использование таких данных не&nbsp;является нарушением его прав, предусмотренных действующим законодательством РФ.</p>
+				<p>Регистрируясь в&nbsp;Личном кабинете на&nbsp;сайте http://kron.space пользователь дает свое согласие на&nbsp;получение рекламно- информационных рассылок от&nbsp;Компании для информирования о&nbsp;различных акциях, новых продуктах и&nbsp;пр., посредством электронной почты, SMS, MMS. В&nbsp;любой момент времени пользователь может отказаться от&nbsp;получения таких рассылок, путем обращения в&nbsp;Компанию.</p>
+				<p>Пользователь имеет право в&nbsp;любое время изменить или удалить свои данные. Предоставление указанных данных является добровольным, но&nbsp;в&nbsp;случае отказа от&nbsp;их&nbsp;предоставления осуществление регистрации учетной записи невозможно.</p>
+				<p>Для защиты полученных данных от&nbsp;потери, кражи, несанкционированного изменения <nobr>ООО &laquo;Меркурий&raquo;</nobr>, приме- няются все необходимые меры технического, администра- тивного и&nbsp;юридического характера. Данное Соглашение может изменяться в&nbsp;любое время, в&nbsp;случае существенного изменения работы соответствующих служб или сервисов <nobr>ООО &laquo;Мерурий&raquo;</nobr>, с&nbsp;указанием даты последнего обновления.</p>
+				<p>Если изменения будут затрагивать правила обеспечения конфиденциальности или правила сбора, передачи, обработки и&nbsp;хранения личной информации, то&nbsp;пользователь будет извещён об&nbsp;этом посредством явного уведомления на&nbsp;данной <nobr>веб-странице</nobr> или посредством электронной почты.</p>
+				<p>Компания может рассылать своим клиентам ссылки или указания на&nbsp;установку приложений через СМС/MMS/<nobr>e-mail</nobr>&nbsp;&mdash; сообщения.</p>
+				<p>Компания никогда не&nbsp;запрашивает пароли для отмены операций или шаблонов в&nbsp;системе. Компания никогда не&nbsp;отправляет СМС/MMS/<nobr>e-mail</nobr>&nbsp;&mdash; сообщения с&nbsp;просьбой подтвердить, обновить или предоставить следующие персональные данные: номер мобильного телефона, номер банковской карты, срок ее&nbsp;действия, CVV, <nobr>ПИН-код</nobr>, контрольную информацию, данные документа, удостоверяющего личность;</p>
+				<p>Компания никогда не&nbsp;отправляет СМС/MMS/<nobr>e-mail</nobr>&nbsp;&mdash; сообщения с&nbsp;формой для ввода персональных данных; В&nbsp;рамках проводимых кампаний Компанией может отправлять <nobr>e-mail</nobr>&nbsp;&mdash; сообщения со&nbsp;ссылкой на&nbsp;анкету для ввода персональных данных, анкета размещается на&nbsp;сайте Компании.</p>
+				<p>Компания может направлять <nobr>e-mail</nobr>&nbsp;&mdash; сообщения со&nbsp;ссылкой для входа в&nbsp;личный кабинет или сервис саморегистрации системы, при этом ссылка ведет на&nbsp;официальный сайт Компании.</p>
+				<p>Чаще всего Компания при рассылке СМС/MMS/<nobr>e-mail</nobr>&nbsp;&mdash; сообщений всегда обращается адресно, в&nbsp;сообщении от&nbsp;имени KRON всегда указываются имя и&nbsp;отчество клиента либо номер личного кабинета.</p>
+				<p>При исходящем звонке сотрудники Компании не&nbsp;запрашивают персональные данные: фамилию, данные документа, удостоверяющего личность, номер мобильного телефона, номер банковской карты, срок ее&nbsp;действия, CVV, <nobr>ПИН-код</nobr>, контрольную информацию, идентификатор и&nbsp;пароли для входа в&nbsp;сервис KRON.</p>
+			</div>
+		</div>
+	</div>
+</div><!-- #agreement -->
+
+<!-- input file -->
+<div class="modal fade" id="inputFile" tabindex="-1" role="dialog" aria-labelledby="inputFile">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Загрузить документ</h4>
+			</div>
+			<form action="" method="post">
+				<div class="modal-body">
+					<input type="file">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-defo" data-dismiss="modal">Закрыть</button>
+					<button type="submit" class="btn btn-primary">Загрузить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- jQuery first, then Bootstrap JS -->
+<script src="libs/jquery%203.2.1/jquery-3.2.1.min.js"></script>
+<script src="libs/bootstrap%203.3.7/js/bootstrap.min.js"></script>
+<!-- Custom js -->
+<script src="js/main.js"></script>
+</body>
+</html>

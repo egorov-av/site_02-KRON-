@@ -46,6 +46,7 @@ gulp.task('sprite', function () {
 gulp.task('js', function () {
 	return gulp.src([
 		'assets/libs/matchHeight/jqueryMatchHeight.js',
+		'assets/libs/perfect/perfect.js',
 		'assets/js/custom.js'
 	])
 		.pipe(concat('main.js'))
