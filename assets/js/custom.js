@@ -1,6 +1,10 @@
 ; // Start custom code
 $(document).ready(function () {
-	$('.column').matchHeight();
+	$('.column').matchHeight({
+		byRow: true,
+		property: 'height',
+		target: $('.column:first')
+	});
 
 	$('#service').click(function(){
 		$('.header-center').slideToggle();
