@@ -1,10 +1,8 @@
 ; // Start custom code
 $(document).ready(function () {
-	$('.column').matchHeight({
-		byRow: true,
-		property: 'height',
-		target: $('.column:first')
-	});
+	$('.column').jcolumn();
+
+	$('.registration_text_step').jcolumn();
 
 	$('#service').click(function(){
 		$('.header-center').slideToggle();
