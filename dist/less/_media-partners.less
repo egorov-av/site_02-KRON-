@@ -1,0 +1,466 @@
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina -xs- */
+@media only screen and (min-width: 320px) {
+	.registration {
+		&_btn {
+			margin: 0 auto 20px;
+		}
+		&_text {
+			padding-left: 0;
+		}
+		&_line {
+			text-align: right;
+			& > .registration_line_btn {
+				display: block;
+				text-align: center;
+				bottom: 0;
+			}
+			&_btn > button {
+				margin-bottom: 15px;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+			&_img {
+				bottom: -35px;
+			}
+			&_caption {
+				position: relative;
+				bottom: -1px;
+			}
+		}
+	}
+
+	.partnerShip {
+		&_text {
+			margin-top: 10px;
+			& p {
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+			& span {
+				float: none;
+				display: block;
+				width: 61.5px;
+			}
+		}
+		&_content {
+			&_img {
+				margin-left: auto;
+				margin-right: auto;
+			}
+			& .carousel-control span {
+				display: none;
+			}
+		}
+		& .carousel {
+			&_text {
+				height: 200px;
+			}
+		}
+		&_line {
+			text-align: left;
+			& > .partnerShip_line_btn {
+				display: block;
+				text-align: center;
+				bottom: 0;
+			}
+			&_btn > button {
+				margin-bottom: 15px;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+			&_img {
+				bottom: -35px;
+			}
+			&_caption {
+				position: relative;
+				bottom: -1px;
+			}
+		}
+	}
+
+	.partnerFood {
+		&_content_img {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		&_selected {
+			margin-bottom: 0;
+			font-size: 22px;
+			& span {
+				font-size: 15px;
+			}
+		}
+		&_item h4 {
+			margin-right: 0;
+		}
+		&_line {
+			text-align: right;
+			& > .partnerFood_line_btn {
+				display: block;
+				text-align: center;
+				bottom: 0;
+			}
+			&_btn > button {
+				margin-bottom: 15px;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+			&_img {
+				bottom: -35px;
+			}
+			&_caption {
+				position: relative;
+				bottom: -1px;
+			}
+		}
+		&_form {
+			width: auto;
+			margin-left: auto;
+			margin-right: auto;
+			&_title {
+				margin-bottom: 10px;
+			}
+			& .insetForm {
+				top: 0;
+				right: 0;
+				margin-bottom: 10px;
+				&_right {
+					float: none;
+				}
+				&_left {
+					float: none;
+					margin-right: 18px;
+					text-align: center;
+					&_label {
+						display: inline-block;
+						margin-bottom: 10px;
+						&:first-child {
+							margin-top: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.cooperation {
+		&_form {
+			width: auto;
+			margin: 10px auto 30px;
+			& .form-group {
+				width: auto;
+			}
+		}
+		&_representation {
+			width: 290px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		&_map-down {
+			height: 320px;
+		}
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+	.partnerShip {
+		&_text {
+			margin-top: 0;
+			& p {
+				margin-right: 16.85%; /* 110px / 653px */
+			}
+			& span {
+				margin-top: 4%;
+				float: right;
+			}
+		}
+		& .carousel-control span {
+			display: block;
+		}
+		& .carousel_text {
+			width: 100%;
+		}
+	}
+
+	.partnerFood {
+		&_selected {
+			font-size: 32px;
+			& span {
+				font-size: 22px;
+			}
+		}
+		&_item h4 {
+			margin-right: 100px;
+		}
+		&_form {
+			width: 375px;
+			margin-bottom: 10px;
+			&_title {
+				margin-bottom: 0;
+			}
+			& .insetForm {
+				top: -35px;
+				right: -30px;
+				margin-bottom: -35px;
+				&_right {
+					float: left;
+				}
+				&_left {
+					float: left;
+					margin-right: 0;
+					text-align: left;
+					&_label {
+						display: block;
+						margin-bottom: 7px;
+						&:first-child {
+							margin-top: 37px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.cooperation {
+		&_townSelect {
+			border: 5px solid @color_btn_blue;
+			clip-path: polygon(0 0, 10% 0, 10% 6%, 90% 6%, 90% 0, 100% 0, 100% 30%, 94% 30%, 94% 70%, 100% 70%, 100% 100%, 90% 100%, 90% 94%, 10% 94%, 10% 100%, 0 100%, 0 70%, 6% 70%, 6% 30%, 0 30%);
+		}
+		&_form {
+			width: 90%;
+		}
+	}
+}
+
+/* Small Devices, Tablets -sm- */
+@media only screen and (min-width: 768px) {
+	.registration {
+		&_btn {
+			top: -100px;
+			right: 10px;
+			margin-bottom: -100px;
+		}
+		&_line {
+			text-align: justify;
+			&::after {
+				content: '';
+				width: 100%;
+				height: 0;
+				display: inline-block;
+			}
+			& > .registration_line_btn {
+				bottom: -20px;
+			}
+			&_btn > button {
+				margin-bottom: 0;
+			}
+			&_caption {
+				bottom: -20px;
+			}
+		}
+	}
+
+	.partnerShip {
+		& .carousel_text {
+			width: 64.32%; /* 420px / 653px */
+		}
+		& .carousel {
+			& .item {
+				height: 200px;
+			}
+			&_text {
+				height: 170px;
+			}
+		}
+		&_line {
+			text-align: justify;
+			&::after {
+				content: '';
+				width: 100%;
+				height: 0;
+				display: inline-block;
+			}
+			& > .partnerShip_line_btn {
+				bottom: -20px;
+			}
+			&_btn > button {
+				margin-bottom: 0;
+			}
+			&_caption {
+				bottom: -20px;
+			}
+		}
+	}
+
+	.partnerFood {
+		&_line {
+			text-align: justify;
+			&::after {
+				content: '';
+				width: 100%;
+				height: 0;
+				display: inline-block;
+			}
+			&_btn > button {
+				margin-bottom: 0;
+			}
+			&_caption {
+				bottom: -20px;
+			}
+		}
+	}
+
+	.cooperation {
+		&_form .form-group {
+			width: 32%;
+			margin-right: 10px;
+		}
+		&_map {
+			&::after,
+			&::before {
+				content: '';
+			}
+			&-down {
+				height: 400px;
+				&::after,
+				&::before {
+					content: '';
+				}
+			}
+		}
+	}
+}
+
+/* Medium Devices, Desktops -md- */
+@media only screen and (min-width: 992px) {
+	.registration {
+		&_btn {
+			top: -160px;
+			margin-bottom: -160px;
+		}
+		&_text {
+			padding-left: 45px;
+			& .step2 {
+				display: flex;
+				flex-direction: column-reverse;
+				& .registration_text_step {
+					margin-top: 11px;
+				}
+			}
+		}
+		&_line {
+			text-align: right;
+			&::after {
+				content: none;
+			}
+			& > .registration_line_btn {
+				display: inline-block;
+				text-align: right;
+				bottom: 70px;
+			}
+			&_img {
+				bottom: -15px;
+			}
+			&_caption {
+				bottom: 0;
+			}
+		}
+	}
+
+	.partnerShip {
+		&_text span {
+			margin-top: 7%;
+		}
+		& .carousel {
+			& .item {
+				height: 220px;
+			}
+			&_text {
+				height: 200px;
+			}
+		}
+		&_line {
+			text-align: left;
+			&::after {
+				content: none;
+			}
+			& > .partnerShip_line_btn {
+				float: right;
+				text-align: left;
+				bottom: -70px;
+				right: 35px;
+			}
+			&_img {
+				bottom: -15px;
+			}
+			&_caption {
+				bottom: 0;
+			}
+		}
+	}
+
+	.partnerFood {
+		&_selectes {
+			margin-bottom: -50px;
+		}
+		&_line {
+			text-align: right;
+			&::after {
+				content: none;
+			}
+			& > .partnerFood_line_btn {
+				float: left;
+				text-align: right;
+				bottom: -50px;
+			}
+			h3 {
+				margin-left: 1px;
+			}
+			&_img {
+				bottom: -15px;
+			}
+			&_caption {
+				bottom: 0;
+			}
+			&_btn > button {
+				margin-left: 1px;
+				margin-right: 1px;
+			}
+		}
+		&_form {
+			float: right;
+			margin-right: 30px;
+		}
+	}
+
+	.cooperation {
+		&_form {
+			width: auto;
+			margin: 10px 0;
+		}
+		&_representation {
+			width: auto;
+		}
+		&_map-down {
+			height: 600px;
+		}
+	}
+}
+
+/* Large Devices, Wide Screens -lg- */
+@media only screen and (min-width: 1200px) {
+	.partnerFood_line {
+		& h3 {
+			margin-left: 10px;
+		}
+		&_btn {
+			margin-left: 4.49%; /* 60px / 1336px */
+		}
+	}
+
+	.cooperation_form {
+		margin-top: 0;
+	}
+}

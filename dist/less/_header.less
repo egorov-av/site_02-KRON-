@@ -1,0 +1,262 @@
+.header {
+	&_content {
+		background: @color_btn_blue;
+	}
+	&-left {
+		float: left;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	&_account {
+		padding: 20px 0 25px 15px;
+		&_img {
+			width: 73px;
+			float: left;
+			border-radius: 5px;
+			box-shadow: 0 0 8px @base_font_color;
+			& a {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		&_login {
+			padding-top: 34px;
+			padding-bottom: 27px;
+			& .btn {
+				font-size: 10px;
+				font-weight: 700;
+				border-radius: 0;
+				background: @white_font_color;
+				color: @color_btn;
+				border-color: @white_font_color;
+				padding: 0 11px;
+				&:active,
+				&:hover {
+					background: @color_btn;
+					color: @white_font_color;
+					border-color: @color_btn;
+				}
+			}
+			& span {
+				color: @white_font_color;
+				font-family: @font_segoe;
+				font-size: 7px;
+				font-weight: 400;
+				border-radius: 50%;
+				padding: 6px 4px;
+				margin-left: -9px;
+				margin-right: -9px;
+				position: relative;
+				background: @color_btn_blue;
+			}
+		}
+		&_user {
+			& .user {
+				color: @white_font_color;
+				font-size: 12px;
+				font-weight: 700;
+				text-decoration: underline;
+				margin-bottom: 13px;
+			}
+			& .btn {
+				margin-bottom: 10px;
+				border-radius: 0;
+			}
+		}
+	}
+	& form {
+		& .form-control {
+			padding: 2px 10px;
+		}
+		& .form-control,
+		& .input-group-btn > .btn {
+			height: 18px;
+			border-color: transparent;
+			box-shadow: none;
+		}
+		& .input-group-btn > .btn:focus {
+			outline: none;
+		}
+		& .glyphicon {
+			top: -3px;
+		}
+	}
+	&_kron {
+		padding-top: 30px;
+		padding-left: 5px;
+		&_text {
+			color: @white_font_color;
+			font-size: 12px;
+			font-weight: 400;
+			margin-bottom: 0;
+			letter-spacing: 2.5px;
+		}
+		&_head {
+			margin-top: -15px;
+			& a {
+				text-shadow: 0 0 9px @base_font_color;
+				color: white;
+				font-size: 83px;
+				font-weight: 700;
+				&:hover,
+				&:focus,
+				&:active {
+					text-decoration: none;
+					color: rgba(255, 255, 255, .85);
+				}
+			}
+		}
+	}
+	&-center-toggle .btn,
+	&_account_hide .btn {
+		font-size: 38px;
+		font-weight: 700;
+		text-transform: uppercase;
+		background: transparent;
+		border: none;
+		&:focus,
+		&:active,
+		&:hover {
+			outline: none;
+			box-shadow: none;
+			color: rgba(255,255,255,.9);
+		}
+	}
+	&_account_hide .btn {
+		margin-top: 0;
+	}
+	&_about {
+		&_title {
+			font-size: 12px;
+			font-weight: 400;
+			margin-bottom: 0;
+			& span {
+				display: block;
+				font-family: @font_segoe;
+				font-size: 7px;
+				font-weight: 400;
+				margin-top: -1px;
+			}
+		}
+		&_text {
+			margin-bottom: 15px;
+			& .h3 {
+				background: @color_btn_blue;
+				display: inline-block;
+				font-size: 19px;
+				font-weight: 700;
+				margin-top: 5px;
+				margin-bottom: 0;
+			}
+			& .lead {
+				padding: 10px 15px;
+				margin-bottom: 0;
+			}
+		}
+		&_button {
+			margin-bottom: -25px;
+			&::after {
+				content: '';
+				width: 100%;
+				display: inline-block;
+			}
+			& a {
+				border-radius: 0;
+				border: 2px solid transparent;
+				color: @white_font_color;
+				font-size: 22px;
+				font-weight: 700;
+				background: @color_btn_blue;
+				display: inline-block;
+				padding: 0 2px;
+				margin: 0;
+				&:hover,
+				&:active,
+				&:focus {
+					color: @color_btn_blue;
+					background: @white_font_color;
+					border: 2px solid @color_btn_blue;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	&-right {
+		float: right;
+		padding-right: 15px;
+	}
+	& .navbar {
+		padding-top: 35px;
+		background: @color_btn_blue;
+		border: none;
+		&-collapse {
+			padding: 0;
+		}
+		& .nav li {
+			margin: 0;
+			&:first-child {
+				border-top: 2px solid @white_font_color;
+			}
+		}
+		.nav-pills>li.active>a,
+		.nav-pills>li.active>a:focus,
+		.nav-pills>li.active>a:hover {
+			background: transparent;
+			outline: none;
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				border-style: solid;
+				border-width: 20px 0 20px 15px;
+				border-color: transparent transparent transparent @white_font_color;
+			}
+		}
+		& .nav a {
+			display: block;
+			color: @white_font_color;
+			font-family: @font_segoe;
+			font-size: 24px;
+			font-weight: 700;
+			padding: 3px 15px 3px 25px;
+			border-bottom: 2px solid @white_font_color;
+			border-radius: 0;
+			&:focus {
+				background: transparent;
+				outline: none;
+			}
+			&:active {
+				color: rgba(255,255,255,.85);
+			}
+			&:hover {
+				background: transparent;
+				outline: none;
+				&::before {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					border-style: solid;
+					border-width: 20px 0 20px 15px;
+					border-color: transparent transparent transparent @white_font_color;
+				}
+			}
+		}
+		& .navbar-toggle {
+			top: -10px;
+			border-color: transparent;
+			& .icon-bar {
+				background: @white_font_color;
+				height: 3px;
+				width: 25px;
+			}
+			&:focus {
+				background: rgba(255,255,255,.3);
+			}
+		}
+	}
+}

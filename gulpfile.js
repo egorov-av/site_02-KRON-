@@ -79,7 +79,10 @@ gulp.task('clean', function () {
 // Build
 gulp.task('build', ['clean'], function () {
 	//html
-	var buildHtml = gulp.src('assets/*.html')
+	var buildHtml = gulp.src([
+		'assets/customers.html',
+		'assets/partners.html'
+	])
 		.pipe(gulp.dest('dist/'));
 	//fonts
 	var buildFonts = gulp.src('assets/fonts/**/*')
@@ -91,7 +94,10 @@ gulp.task('build', ['clean'], function () {
 	var buildLess = gulp.src('assets/less/*.less')
 		.pipe(gulp.dest('dist/less'));
 	//css
-	var buildCss = gulp.src('assets/css/*.css')
+	var buildCss = gulp.src([
+		'assets/css/customers.css',
+		'assets/css/partners.css'
+	])
 		.pipe(csso())
 		.pipe(gulp.dest('dist/css'));
 	//js

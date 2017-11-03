@@ -1,0 +1,286 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@icon1-hover-name: 'icon1-hover';
+@icon1-hover-x: 138px;
+@icon1-hover-y: 53px;
+@icon1-hover-offset-x: -138px;
+@icon1-hover-offset-y: -53px;
+@icon1-hover-width: 55px;
+@icon1-hover-height: 46px;
+@icon1-hover-total-width: 243px;
+@icon1-hover-total-height: 200px;
+@icon1-hover-image: '../img/footer/sprite.png';
+@icon1-hover: 138px 53px -138px -53px 55px 46px 243px 200px '../img/footer/sprite.png' 'icon1-hover';
+@icon1-name: 'icon1';
+@icon1-x: 0px;
+@icon1-y: 115px;
+@icon1-offset-x: 0px;
+@icon1-offset-y: -115px;
+@icon1-width: 55px;
+@icon1-height: 46px;
+@icon1-total-width: 243px;
+@icon1-total-height: 200px;
+@icon1-image: '../img/footer/sprite.png';
+@icon1: 0px 115px 0px -115px 55px 46px 243px 200px '../img/footer/sprite.png' 'icon1';
+@icon2-hover-name: 'icon2-hover';
+@icon2-hover-x: 0px;
+@icon2-hover-y: 0px;
+@icon2-hover-offset-x: 0px;
+@icon2-hover-offset-y: 0px;
+@icon2-hover-width: 59px;
+@icon2-hover-height: 52px;
+@icon2-hover-total-width: 243px;
+@icon2-hover-total-height: 200px;
+@icon2-hover-image: '../img/footer/sprite.png';
+@icon2-hover: 0px 0px 0px 0px 59px 52px 243px 200px '../img/footer/sprite.png' 'icon2-hover';
+@icon2-name: 'icon2';
+@icon2-x: 69px;
+@icon2-y: 0px;
+@icon2-offset-x: -69px;
+@icon2-offset-y: 0px;
+@icon2-width: 59px;
+@icon2-height: 52px;
+@icon2-total-width: 243px;
+@icon2-total-height: 200px;
+@icon2-image: '../img/footer/sprite.png';
+@icon2: 69px 0px -69px 0px 59px 52px 243px 200px '../img/footer/sprite.png' 'icon2';
+@icon3-hover-name: 'icon3-hover';
+@icon3-hover-x: 0px;
+@icon3-hover-y: 62px;
+@icon3-hover-offset-x: 0px;
+@icon3-hover-offset-y: -62px;
+@icon3-hover-width: 66px;
+@icon3-hover-height: 43px;
+@icon3-hover-total-width: 243px;
+@icon3-hover-total-height: 200px;
+@icon3-hover-image: '../img/footer/sprite.png';
+@icon3-hover: 0px 62px 0px -62px 66px 43px 243px 200px '../img/footer/sprite.png' 'icon3-hover';
+@icon3-name: 'icon3';
+@icon3-x: 138px;
+@icon3-y: 0px;
+@icon3-offset-x: -138px;
+@icon3-offset-y: 0px;
+@icon3-width: 66px;
+@icon3-height: 43px;
+@icon3-total-width: 243px;
+@icon3-total-height: 200px;
+@icon3-image: '../img/footer/sprite.png';
+@icon3: 138px 0px -138px 0px 66px 43px 243px 200px '../img/footer/sprite.png' 'icon3';
+@icon-fb-hover-name: 'icon_fb-hover';
+@icon-fb-hover-x: 214px;
+@icon-fb-hover-y: 76px;
+@icon-fb-hover-offset-x: -214px;
+@icon-fb-hover-offset-y: -76px;
+@icon-fb-hover-width: 29px;
+@icon-fb-hover-height: 28px;
+@icon-fb-hover-total-width: 243px;
+@icon-fb-hover-total-height: 200px;
+@icon-fb-hover-image: '../img/footer/sprite.png';
+@icon-fb-hover: 214px 76px -214px -76px 29px 28px 243px 200px '../img/footer/sprite.png' 'icon_fb-hover';
+@icon-fb-name: 'icon_fb';
+@icon-fb-x: 214px;
+@icon-fb-y: 38px;
+@icon-fb-offset-x: -214px;
+@icon-fb-offset-y: -38px;
+@icon-fb-width: 29px;
+@icon-fb-height: 28px;
+@icon-fb-total-width: 243px;
+@icon-fb-total-height: 200px;
+@icon-fb-image: '../img/footer/sprite.png';
+@icon-fb: 214px 38px -214px -38px 29px 28px 243px 200px '../img/footer/sprite.png' 'icon_fb';
+@icon-ggl-hover-name: 'icon_ggl-hover';
+@icon-ggl-hover-x: 104px;
+@icon-ggl-hover-y: 115px;
+@icon-ggl-hover-offset-x: -104px;
+@icon-ggl-hover-offset-y: -115px;
+@icon-ggl-hover-width: 29px;
+@icon-ggl-hover-height: 29px;
+@icon-ggl-hover-total-width: 243px;
+@icon-ggl-hover-total-height: 200px;
+@icon-ggl-hover-image: '../img/footer/sprite.png';
+@icon-ggl-hover: 104px 115px -104px -115px 29px 29px 243px 200px '../img/footer/sprite.png' 'icon_ggl-hover';
+@icon-ggl-name: 'icon_ggl';
+@icon-ggl-x: 39px;
+@icon-ggl-y: 171px;
+@icon-ggl-offset-x: -39px;
+@icon-ggl-offset-y: -171px;
+@icon-ggl-width: 29px;
+@icon-ggl-height: 29px;
+@icon-ggl-total-width: 243px;
+@icon-ggl-total-height: 200px;
+@icon-ggl-image: '../img/footer/sprite.png';
+@icon-ggl: 39px 171px -39px -171px 29px 29px 243px 200px '../img/footer/sprite.png' 'icon_ggl';
+@icon-ig-hover-name: 'icon_ig-hover';
+@icon-ig-hover-x: 214px;
+@icon-ig-hover-y: 0px;
+@icon-ig-hover-offset-x: -214px;
+@icon-ig-hover-offset-y: 0px;
+@icon-ig-hover-width: 29px;
+@icon-ig-hover-height: 28px;
+@icon-ig-hover-total-width: 243px;
+@icon-ig-hover-total-height: 200px;
+@icon-ig-hover-image: '../img/footer/sprite.png';
+@icon-ig-hover: 214px 0px -214px 0px 29px 28px 243px 200px '../img/footer/sprite.png' 'icon_ig-hover';
+@icon-ig-name: 'icon_ig';
+@icon-ig-x: 78px;
+@icon-ig-y: 171px;
+@icon-ig-offset-x: -78px;
+@icon-ig-offset-y: -171px;
+@icon-ig-width: 29px;
+@icon-ig-height: 28px;
+@icon-ig-total-width: 243px;
+@icon-ig-total-height: 200px;
+@icon-ig-image: '../img/footer/sprite.png';
+@icon-ig: 78px 171px -78px -171px 29px 28px 243px 200px '../img/footer/sprite.png' 'icon_ig';
+@icon-in-hover-name: 'icon_in-hover';
+@icon-in-hover-x: 117px;
+@icon-in-hover-y: 171px;
+@icon-in-hover-offset-x: -117px;
+@icon-in-hover-offset-y: -171px;
+@icon-in-hover-width: 29px;
+@icon-in-hover-height: 28px;
+@icon-in-hover-total-width: 243px;
+@icon-in-hover-total-height: 200px;
+@icon-in-hover-image: '../img/footer/sprite.png';
+@icon-in-hover: 117px 171px -117px -171px 29px 28px 243px 200px '../img/footer/sprite.png' 'icon_in-hover';
+@icon-in-name: 'icon_in';
+@icon-in-x: 156px;
+@icon-in-y: 171px;
+@icon-in-offset-x: -156px;
+@icon-in-offset-y: -171px;
+@icon-in-width: 29px;
+@icon-in-height: 28px;
+@icon-in-total-width: 243px;
+@icon-in-total-height: 200px;
+@icon-in-image: '../img/footer/sprite.png';
+@icon-in: 156px 171px -156px -171px 29px 28px 243px 200px '../img/footer/sprite.png' 'icon_in';
+@icon-tw-hover-name: 'icon_tw-hover';
+@icon-tw-hover-x: 0px;
+@icon-tw-hover-y: 171px;
+@icon-tw-hover-offset-x: 0px;
+@icon-tw-hover-offset-y: -171px;
+@icon-tw-hover-width: 29px;
+@icon-tw-hover-height: 29px;
+@icon-tw-hover-total-width: 243px;
+@icon-tw-hover-total-height: 200px;
+@icon-tw-hover-image: '../img/footer/sprite.png';
+@icon-tw-hover: 0px 171px 0px -171px 29px 29px 243px 200px '../img/footer/sprite.png' 'icon_tw-hover';
+@icon-tw-name: 'icon_tw';
+@icon-tw-x: 65px;
+@icon-tw-y: 115px;
+@icon-tw-offset-x: -65px;
+@icon-tw-offset-y: -115px;
+@icon-tw-width: 29px;
+@icon-tw-height: 29px;
+@icon-tw-total-width: 243px;
+@icon-tw-total-height: 200px;
+@icon-tw-image: '../img/footer/sprite.png';
+@icon-tw: 65px 115px -65px -115px 29px 29px 243px 200px '../img/footer/sprite.png' 'icon_tw';
+@icon-vk-hover-name: 'icon_vk-hover';
+@icon-vk-hover-x: 76px;
+@icon-vk-hover-y: 62px;
+@icon-vk-hover-offset-x: -76px;
+@icon-vk-hover-offset-y: -62px;
+@icon-vk-hover-width: 29px;
+@icon-vk-hover-height: 29px;
+@icon-vk-hover-total-width: 243px;
+@icon-vk-hover-total-height: 200px;
+@icon-vk-hover-image: '../img/footer/sprite.png';
+@icon-vk-hover: 76px 62px -76px -62px 29px 29px 243px 200px '../img/footer/sprite.png' 'icon_vk-hover';
+@icon-vk-name: 'icon_vk';
+@icon-vk-x: 143px;
+@icon-vk-y: 115px;
+@icon-vk-offset-x: -143px;
+@icon-vk-offset-y: -115px;
+@icon-vk-width: 29px;
+@icon-vk-height: 29px;
+@icon-vk-total-width: 243px;
+@icon-vk-total-height: 200px;
+@icon-vk-image: '../img/footer/sprite.png';
+@icon-vk: 143px 115px -143px -115px 29px 29px 243px 200px '../img/footer/sprite.png' 'icon_vk';
+@spritesheet-width: 243px;
+@spritesheet-height: 200px;
+@spritesheet-image: '../img/footer/sprite.png';
+@spritesheet-sprites: @icon1-hover @icon1 @icon2-hover @icon2 @icon3-hover @icon3 @icon-fb-hover @icon-fb @icon-ggl-hover @icon-ggl @icon-ig-hover @icon-ig @icon-in-hover @icon-in @icon-tw-hover @icon-tw @icon-vk-hover @icon-vk;
+@spritesheet: 243px 200px '../img/footer/sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  //.sprite-width(@sprite);
+  //.sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

@@ -1,0 +1,124 @@
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina -xs- */
+@media only screen and (min-width: 320px) {
+	.header {
+		&-center {
+			clear: both;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		&_about {
+			padding: 1.85%; /* 15px / 810px */
+			&_button {
+				text-align: center;
+				& a {
+					margin-right: 10px;
+				}
+			}
+		}
+		&-left {
+			width: auto;
+		}
+		&_account {
+			border-bottom: none;
+			&_img {
+				height: 73px;
+				border-radius: 50%;
+				box-shadow: 0 0 10px @base_font_color;
+				margin-right: 0;
+			}
+		}
+		&-right {
+			width: auto;
+			padding-left: 15px;
+		}
+		& .navbar-collapse {
+			position: absolute;
+			top: 75px;
+			right: 0;
+			background: @color_btn_blue;
+			z-index: 100;
+		}
+		&-center {
+			display: none;
+			&-toggle .btn {
+				display: none;
+			}
+		}
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+	.header {
+		&-center-toggle .btn {
+			display: inline-block;
+		}
+	}
+}
+
+/* Small Devices, Tablets -sm- */
+@media only screen and (min-width: 768px) {
+	.header {
+		&-left {
+			width: 340px;
+		}
+		&_account {
+			border-bottom: 2px solid @white_font_color;
+			&_img {
+				height: 98px;
+				border-radius: 5px;
+				margin-right: 25px;
+			}
+		}
+		& .navbar-collapse {
+			position: relative;
+			top: 0;
+			right: 0;
+			background: transparent;
+		}
+		&-center {
+			display: block!important;
+		}
+		&-right {
+			padding-left: 0;
+		}
+	}
+}
+
+/* Medium Devices, Desktops -md- */
+@media only screen and (min-width: 992px) {
+	.header {
+		&-center {
+			clear: none;
+			margin-left: 340px;
+			margin-right: 213px;
+		}
+		&_about {
+			padding: 1.85% 1.23%; /* 15px & 10px/ 810px */
+			&_button {
+				text-align: justify;
+				& a {
+					margin-right: 1px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1050px) {
+	.header {
+		&_about {
+			padding: 1.85% 6.17%; /* 15px & 50px / 810px */
+		}
+	}
+}
+
+/* Large Devices, Wide Screens -lg- */
+@media only screen and (min-width: 1200px) {
+	.header {
+		&_about {
+			padding: 1.85% 16.05%; /* 15px & 130px / 810px */
+		}
+	}
+}
